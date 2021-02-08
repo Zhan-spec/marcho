@@ -71,6 +71,7 @@
   }
   &__form-input {
     max-width: 320px;
+    margin-right: -11px;
     width: 100%;
     background-color: #fff;
     border: none;
@@ -82,7 +83,9 @@
   }
   &__form-btn {
     @extend %btn;
-    border: none;
+    padding: 12px 22px;
+    // border: none;
+    border-color: transparent;
     cursor: pointer;
   }
 }
