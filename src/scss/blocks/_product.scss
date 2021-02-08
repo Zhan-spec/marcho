@@ -25,6 +25,7 @@
     position: relative;
     height: 370px;
     overflow: hidden;
+    margin-bottom: 30px;
   }
 
   &__link-box {
@@ -39,8 +40,7 @@
     box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 0.2);
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    // position: relative;  
+    align-items: center;    
     bottom: 50px;
     transform: translateY(300%);
     transition: transform 0.5s;
@@ -50,7 +50,7 @@
   &__link--line::before,
   &__link--line::after {
     content: '';
-    width: 0;
+    width: 1px;
     height: 30px;
     background-color: #ececec;
     position: absolute;
