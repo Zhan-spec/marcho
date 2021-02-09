@@ -1,0 +1,59 @@
+.modal {
+  max-width: 570px;
+  padding-top: 115px;
+  margin: 0 auto 115px;
+
+  &__links {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.2;
+    @extend %roboto-400;
+    color: #909090;
+    margin: 0 30px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__label {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: $bgc;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+
+    &:focus,
+    &:active {
+      border-bottom-color: #000;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    background-color: $title;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %roboto-400;
+    border: none;
+    padding: 14px 0;
+    cursor: pointer;
+  }
+  &__error {
+    display: inline-block;
+    margin-top: 12px;
+    color: $accent;
+  }
+}
