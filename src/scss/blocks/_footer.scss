@@ -6,7 +6,6 @@
   padding: 70px 0 40px;
   border-bottom: 1px solid #ececec;
   display: flex;
-  
   &__contact {
     width: 250px;
     margin-right: 50px;
@@ -69,32 +68,36 @@
   &__text {
     margin-bottom: 25px;
   }
+  &__form {
+    max-width: 470px;
+    width: 100%;
+  }
   &__form-input {
     max-width: 320px;
-    margin-right: -11px;
+    margin-right: -11px;    
     width: 100%;
     background-color: #fff;
     border: none;
-    padding: 12px 10px 12px 15px;
+    padding: 12px 6px 12px 15px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
     &::placeholder {
       color: $default;
     }
   }
   &__form-btn {
-    @extend %btn;
-    padding: 12px 22px;
-    // border: none;
+    @extend %btn;    
+    border: none;
     border-color: transparent;
     cursor: pointer;
   }
 }
 
 .footer-bottom {
-  height: 75px;
+  min-height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 12px;
   &__payment-img {
     display: inline;
@@ -103,4 +106,59 @@
   &__payment-img:not(:first-child) {
     margin-left: 25px;
   }
+}
+
+
+@media (max-width: 1300px) {
+  .footer-top {
+    flex-wrap: wrap;
+
+    &__item-form {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .footer-top {
+
+    &__contact {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-top {
+    &__list {
+      display: none;
+    }    
+    
+    &__form {
+      flex-wrap: wrap;
+      padding: 0 15px;
+      max-width: 650px;
+    }
+    &__form-input {
+      max-width: 100%;
+      
+    }
+    &__form-btn{
+      width: 100%;
+    }
+  }
+  .footer-bottom {
+    &__copy,
+    &__payment {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
 }

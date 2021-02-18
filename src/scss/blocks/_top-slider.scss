@@ -4,17 +4,21 @@
   background-size: cover;
   background-color: $bgc;
   padding: 65px 0 40px;
+
   &__container {
     max-width: 1520px;
   }
-  &__content {
-    padding-left: 175px;
-    padding-top: 125px;
-  }
+
   &__item {
     display: flex !important;
     justify-content: space-between;
   }
+
+  &__content {
+    padding-left: 175px;
+    padding-top: 125px;
+  }
+
   &__title {
     max-width: 670px;
     font-size: 58px;
@@ -23,21 +27,26 @@
     @extend %roboto-700;
     margin-bottom: 35px;
   }
+
   &__text {
     max-width: 470px;
     margin-bottom: 55px;
   }
+
   &__link {
     @extend %btn;
     padding: 14px 35px;
   }
+
   .slick-dots {
     display: flex;
     justify-content: center;
     margin-top: -70px;
+
     li {
       padding: 0 5px;
       line-height: 0;
+
       button {
         padding: 0;
         font-size: 0;
@@ -47,6 +56,7 @@
         border: 1px solid transparent;
         border-radius: 50%;
         position: relative;
+
         &::before {
           content: '';
           width: 6px;
@@ -59,14 +69,75 @@
           transform: translate(-50%, -50%);
         }
       }
+
       &.slick-active {
         button {
           border-color: $accent;
+
           &::before {
-          background-color: $accent;
+            background-color: $accent;
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .top-slider {
+    &__content {
+      padding-left: 15px;
+      padding-top: 40px;
+    }
+
+    &__img {
+      width: 40%;
+      object-fit: contain;
+    }
+
+  }
+}
+
+@media (max-width: 1050px) {
+  .top-slider {
+    &__item {
+      .top-slider__img {
+        display: none;
+      }
+    }
+
+    &__content {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+
+    .slick-dots {
+      margin-top: 0;
+
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .top-slider {
+    padding: 45px 0 30px;
+
+    &__title {
+      font-size: 44px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .top-slider {
+    &__title {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
     }
   }
 }

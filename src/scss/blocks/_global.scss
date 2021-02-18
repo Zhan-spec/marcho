@@ -51,6 +51,7 @@ a {
   justify-content: center;
   padding-left: 25px;
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -60,13 +61,16 @@ a {
     left: 0;
     background-image: url('../images/icons/icon-home.svg');
   }
+
   &__list {
     display: flex;
   }
+
   &__item {
     color: #727272;
     padding-right: 40px;
     position: relative;
+
     &::after {
       content: '';
       position: absolute;
@@ -80,11 +84,13 @@ a {
     &:last-child {
       color: $accent;
       padding-right: 0;
+
       &::after {
         display: none;
       }
     }
   }
+
   &__link {
     color: inherit;
   }
@@ -92,4 +98,16 @@ a {
 
 .header--page-404 {
   background-color: $bgc;
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 32px;
+  }
 }

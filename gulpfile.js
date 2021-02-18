@@ -13,7 +13,7 @@ function browsersync() {
     server: {
       baseDir: 'src/'
     },
-    notefy: false /* убрать уведомления в правом верхнем углу браузера о выполнении действий browsersync*/
+    notify: false /* убрать уведомления в правом верхнем углу браузера о выполнении действий browsersync*/
   })
 }
 

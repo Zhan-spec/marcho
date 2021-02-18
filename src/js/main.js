@@ -1,3 +1,19 @@
+
+$('.menu__btn').on('click', function() {
+  $('.menu__list').toggleClass('menu__list--active');
+});
+
+$('.footer-top__title').on('click', function() {
+  // $('.footer-top__list').slideToggle();
+  // $('.footer-top__list').toggleClass('footer-top__title--active');
+
+  $(this).siblings().slideToggle();
+  // или через  next()
+  $(this).next().slideToggle();
+  $(this).toggleClass('footer-top__title--active');
+
+});
+
 $(function() {
   $('.top-slider__inner').slick({
     arrows: false,
