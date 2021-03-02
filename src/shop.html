@@ -82,8 +82,9 @@
     <section class="shop">
       <div class="container">
         <div class="shop__inner">
-
+          <!-- 3. для тега section ВСЕГДА нужно использовать заголовки, как минимум h2 -->
           <div class="shop__filters filter">
+
             <div class="filter__item filter-search">
               <h3 class="filter__title">Search</h3>
               <form class="filter-search__form" action="#">
@@ -97,8 +98,11 @@
             <div class="filter__item filter-price">
               <h3 class="filter__title">Price filter</h3>
               <form class="filter-price__form" action="#">
-                <input class="filter-price__input" type="text" data-min="0" data-max="999" data-from="200"
-                  data-to="800">
+                <input class="filter-price__input" type="text" 
+                      data-min="0" 
+                      data-max="999" 
+                      data-from="200"
+                      data-to="800">
                 <label class="filter-price__label">
                   <div>Price:
                     $<span class="filter-price__from"></span>
@@ -239,7 +243,7 @@
 
             <div class="filter__item filter-popular">
               <h3 class="filter__title">Popular Tags</h3>
-              <form action="#" class="filter-popular__form">
+              <form class="filter-popular__form" action="#">
                 <label class="filter-popular__label">
                   <input class="filter-popular__input" type="checkbox">
                   <span class="filter-popular__checkbox">Sweetshirt</span>
@@ -266,6 +270,7 @@
                 </label>
               </form>
             </div>
+
           </div>
 
           <div class="shop-content">
@@ -278,7 +283,6 @@
                       d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z"
                       class="cls-1" />
                   </svg>
-
                 </button>
                 <button class="shop-content__filter-btn button-list">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15">
@@ -306,6 +310,7 @@
                 </form>
               </div>
             </div>
+
             <div class="shop-content__inner">
               <div class="product-item">
                 <div class="product-item__img-box">
@@ -822,8 +827,8 @@
               
               <a class="pagination__arrows pagination__next" href="#">Next</a>
             </div>
-
           </div>
+
         </div>
       </div>
     </section>

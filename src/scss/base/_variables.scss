@@ -36,6 +36,7 @@ $bc: #ececec;
   background-color: $accent;
   padding: 12px 26px;
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  cursor: pointer;
 }
 
 @function max($numbers...) {
@@ -46,7 +47,8 @@ $bc: #ececec;
   @return m#{i}n(#{$numbers});
 }
 
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
   width: 1px;
   height: 1px;
   overflow: hidden;

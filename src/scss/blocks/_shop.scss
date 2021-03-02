@@ -127,7 +127,7 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-color__checkbox {
+    &:checked + .filter-color__checkbox {
       background-image: url('../images/icons/check-on.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -177,11 +177,11 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-size__checkbox {
+    &:checked + .filter-size__checkbox {
       background-image: url('../images/icons/icon-check-size.svg');
       border: none;
 
-      &+.filter-size__text {
+      & + .filter-size__text {
         color: $accent;
       }
     }
@@ -211,7 +211,7 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-category__checkbox {
+    &:checked + .filter-category__checkbox {
       background-color: $accent;
       color: #fff;
     }
@@ -238,7 +238,7 @@
   &__input {
     @extend %checkbox-hidden;
 
-    &:checked+.filter-popular__checkbox {
+    &:checked + .filter-popular__checkbox {
       background-color: $accent;
       border-color: $accent;
       color: #fff;
@@ -319,5 +319,5 @@
   width: 10px;
   height: 5px;
   border: none;
-  background-image: url('../../images/icons/icon-angle-down.svg');
+  background-image: url('../images/icons/icon-angle-down.svg');
 }
