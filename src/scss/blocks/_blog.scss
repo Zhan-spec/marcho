@@ -53,34 +53,34 @@
   }
 
   &__item-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin-bottom: 20px;
   }
 
   &__item-author,
   &__item-date {
-    padding-left: 30px;
-    position: relative;
+    // padding-left: 30px;
+    // position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      left: 0;
-      top: 4px;
-    }
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   width: 20px;
+    //   height: 20px;
+    //   left: 0;
+    //   top: 4px;
+    // }
   }
 
-  &__item-author::before {
-    background-image: url(../images/icons/icon-user-grey.svg);
-  }
+  // &__item-author::before {
+  //   background-image: url(../images/icons/icon-user-grey.svg);
+  // }
 
-  &__item-date::before {
-    background-image: url(../images/icons/icon-time.svg);
-  }
+  // &__item-date::before {
+  //   background-image: url(../images/icons/icon-time.svg);
+  // }
 
   &__item-title {
     font-size: 22px;
