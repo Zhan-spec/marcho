@@ -152,7 +152,13 @@ a {
   }
 }
 
-
+address {
+  font-size: 16px;
+  line-height: 1.6;
+  color: $default;
+  @extend %quicksand-500;
+  font-style: normal;
+}
 
 
 @media (max-width: 620px) {
